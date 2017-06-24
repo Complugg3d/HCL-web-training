@@ -1,0 +1,22 @@
+{
+  "name": "node-web-server",
+  "version": "1.0.0",
+  "description": "single page app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "6.10.0"
+  },
+  "keywords": [
+    "author",
+    "erick"
+  ],
+  "author": "erick",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
