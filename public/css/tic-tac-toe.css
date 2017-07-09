@@ -1,0 +1,28 @@
+.tic-tac-toe {
+  flex-flow: row wrap;
+  padding: 9rem;
+  justify-content: space-between;
+}
+
+.cell {
+  height: 15rem;
+  width: 15rem;
+  margin: 1.3rem;
+  background-color: white;
+  padding: 10px;
+  border-radius: 7px;
+}
+.cell img {
+  width: inherit;
+  height: inherit;
+}
+.cross:hover {
+  cursor: url(../assets/img/cross-cursor.png), auto;
+}
+.circle:hover {
+  cursor: url(../assets/img/circle-cursor.png), auto;
+}
+.page-title {
+  padding-top: 3rem;
+  flex-direction: column;
+}
