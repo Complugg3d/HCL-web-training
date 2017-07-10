@@ -13,9 +13,7 @@
   background-color: white;
   border-radius: 7px;
 }
-.cell:hover {  
-  background: #f9f9f9;
-}
+
 .cross-cursor:hover {
   cursor: url(../assets/img/cross-cursor.png), auto;
 }
@@ -38,6 +36,13 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.cross:hover {
+  background: #f9f9f9;
+}
+.circle:hover {
+  background: #f9f9f9;
+}
+
 .flex-vertical {
   flex-direction: column;
 }
