@@ -42,3 +42,22 @@
 .flex-vertical {
   flex-direction: column;
 }
+.play-again {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 4px #b8b8b8;
+  -moz-box-shadow: 0px 2px 4px #b8b8b8;
+  box-shadow: 0px 2px 4px #b8b8b8;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #FE3235;
+  padding: 10px 20px 10px 20px;
+  border: solid #8f0000 1px;
+  text-decoration: none;
+}
+.play-again:hover {
+  background: #ff5255;
+  text-decoration: none;
+}

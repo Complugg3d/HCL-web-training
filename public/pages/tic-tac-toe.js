@@ -32,10 +32,10 @@ function changeCursor(swap) {
 
 function cellClick(e) {
   console.log(e);
-  checkIfWon(e);
+  checkIfGameFinish(e);
 }
 
-function checkIfWon(e) {
+function checkIfGameFinish(e) {
   var tapCounter = e.srcElement.getAttribute("cell-no");
   console.log(tapCounter);
   if (gameState[tapCounter] == 2 && gameIsActive) {
