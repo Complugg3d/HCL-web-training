@@ -38,11 +38,8 @@ function cellClick(e) {
 function checkIfWon(e) {
   var tapCounter = e.srcElement.getAttribute("cell-no");
   console.log(tapCounter);
-
   if (gameState[tapCounter] == 2 && gameIsActive) {
-
     gameState[tapCounter] = activePlayer;
-
     if (activePlayer === 1) {
       changeCursor(true);
       e.srcElement.classList.add("cross");
@@ -52,7 +49,7 @@ function checkIfWon(e) {
       activePlayer = 1;
       e.srcElement.classList.add("circle");
     }
-
+    
     for (var winningPosition of winningPositions) {
       if (gameState[winningPosition[0]] == gameState[winningPosition[1]] &&
         gameState[winningPosition[1]] == gameState[winningPosition[2]] &&
@@ -80,5 +77,5 @@ function checkIfWon(e) {
         }
       }
     }
-
   }
+}
