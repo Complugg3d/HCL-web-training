@@ -9,20 +9,31 @@
   width: 15rem;
   margin: 1.3rem;
   background-color: white;
-  padding: 10px;
   border-radius: 7px;
 }
 .cell img {
   width: inherit;
   height: inherit;
 }
-.cross:hover {
+.cross-cursor:hover {
   cursor: url(../assets/img/cross-cursor.png), auto;
 }
-.circle:hover {
+.circle-cursor:hover {
   cursor: url(../assets/img/circle-cursor.png), auto;
 }
 .page-title {
   padding-top: 3rem;
   flex-direction: column;
+}
+.cross {
+  background-image: url(../assets/img/cross.svg);
+  background-size:90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.circle {
+  background-image: url(../assets/img/circle.svg);
+  background-size:90%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
