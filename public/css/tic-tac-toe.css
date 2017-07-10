@@ -37,10 +37,10 @@
   background-repeat: no-repeat;
 }
 .cross:hover {
-  background: #f9f9f9;
+  background-color: #f9f9f9;
 }
 .circle:hover {
-  background: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .flex-vertical {
