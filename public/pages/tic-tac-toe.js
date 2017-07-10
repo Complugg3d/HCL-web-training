@@ -81,11 +81,11 @@ function checkIfGameFinish(e) {
   }
 }
 
-playAgain.addEventListener('click', repeatGame);
+playAgain.addEventListener('click', resetGame);
 
-function repeatGame () {     
+function resetGame () {     
     activePlayer = 1;
-    for (int i = 0; i < gameState.length; i++) {
+    for (var i = 0; i < gameState.length; i++) {
         gameState[i] = 2;
         cells[i].classList.remove("cross-cursor");
         cells[i].classList.remove("circle-cursor");
