@@ -93,7 +93,7 @@ function resetGame () {
     activePlayer = 1;
     for (var i = 0; i < gameState.length; i++) {
         gameState[i] = 2;
-        cells[i].classList.remove("cross-cursor");
+        cells[i].classList.add("cross-cursor");
         cells[i].classList.remove("circle-cursor");
         cells[i].classList.remove("cross");
         cells[i].classList.remove("circle");
@@ -101,5 +101,4 @@ function resetGame () {
     gameIsActive = true;
     msgOutput.innerText = "Empieza X";
     playAgain.classList.add('hideElement');
-    cells[i].classList.add("cross-cursor");
 }
