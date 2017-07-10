@@ -36,7 +36,6 @@ function cellClick(e) {
 }
 
 function checkIfWon(e) {
-
   var tapCounter = e.srcElement.getAttribute("cell-no");
   console.log(tapCounter);
 
@@ -68,7 +67,7 @@ function checkIfWon(e) {
 
         gameIsActive = false;
       } else {
-        boolean gameIsOver = true;
+        var gameIsOver = true;
         for (var counterState of gameState) {
           if (counterState == 2) {
             gameIsOver = false;
