@@ -7,6 +7,8 @@
 .cell {
   flex-grow: 1;
   flex-basis: 0;
+  width: 15rem;
+  height: 15rem;
   margin: 1.3rem;
   background-color: white;
   border-radius: 7px;
