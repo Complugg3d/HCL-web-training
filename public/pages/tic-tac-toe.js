@@ -32,13 +32,12 @@ function changeCursor(swap) {
 }
 
 function cellClick(e) {
-  console.log(e);
   checkIfGameFinish(e);
 }
 
 function checkIfGameFinish(e) {
   var tapCounter = e.srcElement.getAttribute("cell-no");
-  console.log(tapCounter);
+  
   if (gameState[tapCounter] == 2 && gameIsActive) {
     gameState[tapCounter] = activePlayer;
     if (activePlayer === 1) {
@@ -64,6 +63,9 @@ function checkIfGameFinish(e) {
         msgOutput.innerText = winnerStr + " a ganado!";
 
         gameIsActive = false;
+        playAgain.classList.remove('hideElement');
+        playAgain.classList.add('visible');
+        alert(winnerStr + " a ganado!");
       } else {
         var gameIsOver = true;
         for (var counterState of gameState) {
@@ -74,6 +76,9 @@ function checkIfGameFinish(e) {
 
         if (gameIsOver) {
           msgOutput.innerText = "Fue un empate!";
+          playAgain.classList.remove('hideElement');
+          playAgain.classList.add('visible');
+          alert("Fue un empate!");
           gameIsActive = false;
         }
       }
@@ -93,4 +98,6 @@ function resetGame () {
         cells[i].classList.remove("circle");
     }
     gameIsActive = true;
+    msgOutput.innerText = "Empieza X";
+    playAgain.classList.add('hideElement');
 }
