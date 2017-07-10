@@ -5,8 +5,8 @@
 }
 
 .cell {
-  height: 29%;
-  width: 29%;
+  flex-grow: 1;
+  flex-basis: 0;
   margin: 1.3rem;
   background-color: white;
   border-radius: 7px;
