@@ -21,6 +21,9 @@ function changeCursor(swap) {
 
 function cellClick(e) {
   console.log(e);
+  
+  var tapCounter = e.srcElement.getAttribute("cell-no");
+  console.log(tapCounter);
 
   if(activePlayer === 1 ) {
     changeCursor(true);
