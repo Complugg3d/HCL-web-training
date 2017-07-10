@@ -80,6 +80,7 @@ function checkIfGameFinish(e) {
           playAgain.classList.add('visible');
           alert("Fue un empate!");
           gameIsActive = false;
+          break;
         }
       }
     }
@@ -100,4 +101,5 @@ function resetGame () {
     gameIsActive = true;
     msgOutput.innerText = "Empieza X";
     playAgain.classList.add('hideElement');
+    cells[i].classList.add("cross-cursor");
 }
