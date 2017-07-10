@@ -13,6 +13,9 @@
   background-color: white;
   border-radius: 7px;
 }
+.cell:hover {
+  background-color: #f9f9f9;
+}
 
 .cross-cursor:hover {
   cursor: url(../assets/img/cross-cursor.png), auto;
