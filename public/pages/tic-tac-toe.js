@@ -1,4 +1,5 @@
 var cells = document.getElementsByClassName('cell');
+var playAgain = document.getElementById('playAgain');
 var activePlayer = 1; // 0 is O 1 is x
 var gameState = [2, 2, 2, 2, 2, 2, 2, 2, 2]; // 2 means unplayed
 var winningPositions = [
@@ -78,4 +79,18 @@ function checkIfGameFinish(e) {
       }
     }
   }
+}
+
+playAgain.addEventListener('click', repeatGame);
+
+function repeatGame () {     
+    activePlayer = 1;
+    for (int i = 0; i < gameState.length; i++) {
+        gameState[i] = 2;
+        cells[i].classList.remove("cross-cursor");
+        cells[i].classList.remove("circle-cursor");
+        cells[i].classList.remove("cross");
+        cells[i].classList.remove("circle");
+    }
+    gameIsActive = true;
 }
